@@ -1,0 +1,21 @@
+.card-container{
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+    width: 300px;
+    height: 400px;
+    background-color: rgba(224, 224, 218, 0.877);
+    display: inline-flex;
+    margin: 10px 20px;
+    align-items:flex-end
+}
+.card-content{
+   margin-bottom: 20px;
+   margin-left: 60px;
+   
+}
+
+.product-name{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-style: normal;
+     font-weight: 200;
+     margin: 10px 15px;
+}
