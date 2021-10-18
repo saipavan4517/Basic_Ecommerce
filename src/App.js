@@ -3,27 +3,30 @@ import {Layout,Menu} from "antd";
 import Navbar from "./Components/Navbar/Navbar"
 import { BrowserRouter as Router,Route,Link ,Switch} from 'react-router-dom'
 import Payment from "./Components/Payment/Payment";
+import { fontSize } from "@mui/system";
 
 const { Header, Content, Footer } = Layout;
 function App() {
+  const NavStyles ={
+    marginRight : "30px",
+    fontSize :"30px",
+    color : "white"
+  }
+  
   return (
     <div className="App">
         <Layout className="layout">
     <Header>
-      <div className="logo" />
-      <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
-         <Router>
-         <Menu.Item><Link to="/">Home</Link></Menu.Item> 
-         <Menu.Item><Link to="/Cart">Cart </Link></Menu.Item>
-         <Menu.Item><Link to="/Payment">Payment </Link></Menu.Item>
-         <Route exact path="/Payment" component={Payment} />
-        </Router>
-      </Menu>
+         <Router >
+         <Link  style={NavStyles} to="/">Home</Link>
+         <Link style={NavStyles} to="/Payment">Payment</Link>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/Payment" component={Payment} />
+          </Switch>  
+      </Router>
     </Header>
-    <Content style={{ padding: '0 50px' }}>
-      <Navbar />
-    </Content>
-    <Footer style={{ textAlign: 'center' }}>SaiPavan@2021</Footer>
+  
   </Layout>,
  
     </div>
