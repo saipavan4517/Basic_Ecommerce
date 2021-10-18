@@ -1,0 +1,26 @@
+.nav-div{
+    height: 50px;
+    background-color: rgb(233, 217, 217);
+    padding-top: 30px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    text-decoration: none;
+    
+  }
+
+  ul li{
+    display: inline;
+    font-size: 30px;
+    margin-right: 40px;
+    text-decoration: none;
+    color: white;
+
+  }
+  ul Button{
+      float: right;
+      margin-right: 40px;
+  }

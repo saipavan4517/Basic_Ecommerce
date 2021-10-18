@@ -1,13 +1,14 @@
+import { display } from '@mui/system'
 import React from 'react'
 import  Card from '../Card/Card'
-import Cart from '../Cart/Cart'
+
 
 
  
 export const Products =
-[{ id:3423,name : "Shirt",price : "95"}, 
-{id:31423, name : "pant",price : "145" },
-{id:34231,name : "Tshirt" ,price : "45"}
+[{ id:3423,name : "ShirtPicForBE",price : "95"}, 
+{id:31423, name : "TshirtPicForBE",price : "145" },
+{id:34231,name : "TshirtPicForBE" ,price : "45"}
 ]
 
 const ProductList = () => {
@@ -15,7 +16,9 @@ const ProductList = () => {
         <div>
               {  
              Products.map((product) =>
-              <Card key={product.key}  name = {product.name} price ={product.price}/>
+             <div key={product.id} style={{display:"inline-flex"}}>
+              <Card  name = {product.name} price ={product.price}/>
+              </div>
              )
             }           
         </div>

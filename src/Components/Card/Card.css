@@ -1,7 +1,7 @@
 .card-container{
     box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
-    width: 300px;
-    height: 400px;
+    width: 400px;
+    height: 450px;
     background-color: rgba(224, 224, 218, 0.877);
     display: inline-flex;
     margin: 10px 20px;
@@ -11,6 +11,9 @@
    margin-bottom: 20px;
    margin-left: 60px;
    
+}
+.image-container{
+    margin-left: 20px;
 }
 
 .product-name{
